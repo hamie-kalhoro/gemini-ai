@@ -1,28 +1,50 @@
 # Gemini AI Website
 
-A website built with React and the Gemini API for AI-powered interactions.
+A full-stack application integrating Google's Gemini API with a Spring Boot backend and React frontend.
 
 ## Overview
 
-This project integrates Google's Gemini API with a React-based frontend to create an interactive AI application.
+This project is built on **two main factors**:
+
+### Factor #1: Backend (Spring Boot) ✅
+The backend is developed using **Spring Boot** and is currently available in this repository. It handles:
+- Integration with Google Gemini API
+- RESTful API endpoints
+- Business logic and data processing
+- API key management and security
+
+### Factor #2: Frontend (React) 🔄
+The frontend will be developed using **React** and will be created later in a separate repository.
+- **React Repository Link:** xxxxxx *(will be updated later)*
+- Provides interactive user interface
+- Consumes the Spring Boot API endpoints
+- Modern and responsive design
 
 ## Features
 
 - 🤖 Integration with Google Gemini API
-- ⚛️ Built with React
+- ☕ Spring Boot backend (RESTful API)
+- ⚛️ React frontend (coming soon)
 - 💬 Interactive AI chat interface
 - 🎨 Modern and responsive design
+- 🔐 Secure API key management
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
+### Backend (Spring Boot)
+- Java 17 or higher
+- Maven or Gradle
+- A Google Gemini API key
+
+### Frontend (React) - Coming Soon
 - Node.js (v14 or higher)
 - npm or yarn package manager
-- A Google Gemini API key
 
 ## Getting Started
 
-### 1. Clone the Repository
+### Backend Setup (Spring Boot)
+
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/hamie-kalhoro/gemini-ai.git
