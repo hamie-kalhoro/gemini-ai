@@ -16,8 +16,8 @@ public class GeminiService {
     @Value("${google.api.key}")
     private String googleApiKey;
 
-    public GeminiService(WebClient.Builder webClient) {
-        this.webClient = webClient.build();
+    public GeminiService(WebClient webClient) {
+        this.webClient = webClient;
     }
 
 
