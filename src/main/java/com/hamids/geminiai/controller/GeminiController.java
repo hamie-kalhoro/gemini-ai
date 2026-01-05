@@ -4,10 +4,8 @@ import com.hamids.geminiai.service.GeminiService;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Map;
 
 @RestController
@@ -16,6 +14,11 @@ import java.util.Map;
 public class GeminiController {
 
     private final GeminiService geminiService;
+
+    @GetMapping
+    public String hello() {
+        return "Hello from Gemini Controller!";
+    }
 
     @PostMapping("/ask")
     public ResponseEntity<String> getGeminiResponse(@RequestBody Map<String, String> payload) {
