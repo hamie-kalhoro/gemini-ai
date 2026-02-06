@@ -2,7 +2,6 @@ package com.hamids.geminiai.controller;
 
 import com.hamids.geminiai.service.GeminiService;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +9,7 @@ import java.util.Map;
 
 @RestController
 @AllArgsConstructor
+@CrossOrigin(origins = "https://your-frontend-domain.com")
 @RequestMapping(path = "/api/gemini")
 public class GeminiController {
 
